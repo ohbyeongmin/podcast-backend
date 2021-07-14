@@ -31,6 +31,8 @@ import * as Joi from "joi";
                 DB_PASSWORD: Joi.string(),
                 DB_DATABASE: Joi.string(),
                 PRIVATE_KEY: Joi.string().required(),
+                AWS_ACCESS_KEY: Joi.string().required(),
+                AWS_SECRET_KEY: Joi.string().required(),
             }),
         }),
         TypeOrmModule.forRoot({
